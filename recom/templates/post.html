@@ -1,0 +1,16 @@
+<html>
+<head>
+	<meta charset="utf-8" /> 
+    <title> post html </title>
+</head>
+<body>
+	"***************************************************用户浏览过的新闻为"<br>
+	{% for i in have_ans %}
+	《{{ i }} 》<br>
+	{% endfor %}
+	"***************************************************推荐给用户的新闻为"<br>
+	{% for i in recommend_ans %}
+	《{{ i }} 》<br>
+	{% endfor %}
+</body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+<title> 推荐系统 </title>
+	<body>
+		<div>
+		<script>
+			document.write("<p>*******************************新闻推荐********************************</p>")
+		</script>
+		<form action = "/search-post/" method="post">
+			{% csrf_token %}
+			新闻编号:<br>
+				<input type="text" name="useridx" value="">
+				<input type="submit" value="查看">  
+			<br>
+		</form>
+		</div>
+	</body>
+</html>
